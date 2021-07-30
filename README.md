@@ -46,7 +46,7 @@ The OktaCLI will create the client application and configure the issuer, clientI
 ./mvnw spring-boot:run
 ```
 
-Open an incognito window and go to http://localhost:8080/random. First, the authentication flow will redirect to Okta for the login. Sign in with your Okta credentials.After the authorization, the search result will show a response similar to the following:
+Open an incognito window and go to http://localhost:8080/random. First, the authentication flow will redirect to Okta for the login. Sign in with your Okta credentials. After the authorization, the search result will show a response similar to the following:
 
 ```json
 {
