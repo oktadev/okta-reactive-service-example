@@ -24,7 +24,7 @@ public class SchedulersTest {
 
 
     @Test
-    public void immediateTest() throws InterruptedException {
+    public void immediateTest() {
 
         logger.info("Schedulers.immediate()");
 
@@ -32,9 +32,6 @@ public class SchedulersTest {
                 .map(v -> debug(v, "map"))
                 .subscribeOn(Schedulers.immediate())
                 .subscribe(w -> debug(w,"subscribe"));
-
-
-        Thread.sleep(5000);
     }
 
     @Test
